@@ -11,7 +11,7 @@ const port = 8080;
 
 // Start the server
 app.listen(port, () => {
-    console.log('The magic happens at http://localhost:' + port);
+    console.log('The server started @ http://localhost:' + port);
 });
 
 module.exports = app;
