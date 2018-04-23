@@ -6,6 +6,12 @@ app.all('*', (req, res, next) => {
     next();
 });
 
+app.get('/hello', (req, res, next) => {
+    res.status(200).json({
+        'msg': 'Hello JEDI\'s'
+    });
+});
+
 // Define Port
 const port = 8080;
 
